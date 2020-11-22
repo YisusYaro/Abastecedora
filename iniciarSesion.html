@@ -3,10 +3,11 @@
 <html>
 <head>
 	<title>Abastecedora</title>
-	 <meta charset="UTF-8">
-     <meta name="title" content="Abastecedora">
-      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="title" content="Abastecedora">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="style.css" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -21,20 +22,21 @@
       <br>  
     </header>  
        <div class="IniciarSesion">
-        <form>
+        <div>
             <h1 align="center">Iniciar sesion </h1>
             <br><br>
             <label for="Usuario"><b>Usuario</label>
             <br>
-            <input type="text" name="CajaUsuario" placeholder="Ingrese su nombre de usuario">
+            <input type="text" id= "cajaUsuario" name="cajaUsuario" placeholder="Ingrese su nombre de usuario">
             <br><br>
             <label for="Usuario">Contraseña</label>
             <br>
-            <input type="text" name="CajaContraseña" placeholder="Ingrese su contraseña">
+            <input type="text" id="cajaContraseña" name="cajaContraseña" placeholder="Ingrese su contraseña">
             <br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  type="submit" name="Iniciar" value="Iniciar Sesión"style="background-color: #F0F465;height:40px; width:100px;">
-
-        </form></b>
+            <button  id="iniciarSesion" style="background-color: #F0F465;height:40px; width:100px;">Iniciar Sesion</button>
+            <script src="iniciarSesion.js"></script>
+            </div></b>
+        <script src="iniciarSesion.js"></script>
    </div>
             <br>
             <br>
