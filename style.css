@@ -1,8 +1,132 @@
-body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: navy;
-    margin-left: 20px;
-  }
+*{
+  font-family: 'Roboto';
+}
+
+body{
+  margin: 0px;
+}
+
+header{
+    background-color: #F0F465;
+    margin: 0px;
+    height: 4em;
+}
+
+header h1{
+  float: left;
+  margin: 0px;
+  margin-left: 2em;
+  width: 10em;
+  padding-top: 0.4em;
+}
+
+header nav{
+  float: right;
+  margin: 0px;
+  padding-top: 1.4em;
+}
+
+header nav a{
+  color: black;
+  margin: 0px;
+  text-decoration: none;
+  margin-left: 1.5em;
+  margin-right: 4em;
+}
+
+header nav a:hover{
+  font-weight: bold;
+}
+
+header nav a:visited{
+  color: black;
+}
+
+#landscape{
+  padding-left: 4em;
+  height: 39.5em;
+}
+
+#bienvenidaTitulo{
+  float: left;
+  margin-top: 2em;
+  font-size: 4em;
+  width: 10em;
+}
+
+#bienvenidaTexto{
+  float: left;
+  margin-top: 0.5em;
+  width: 30em;
+}
+
+#landscape img{
+  margin-top: 7em;
+  margin-right: 4em;
+  float: right;
+}
+
+#botonVerCatalogo{
+  float: left;
+  margin-left: 8em;
+  margin-top: 3em;
+  width: 12em;
+  height: 2.6em;
+  background-color: #F0F465;
+  border: 2px solid black;
+  border-radius: 0.8em;
+}
+
+#botonVerCatalogo div{
+  padding-top: 0.7em;
+  padding-left: 3em;
+}
+
+footer{
+  margin: 0px;
+  background-color: #F0F465;
+  height: 4em;
+}
+
+.footerIzquierda{
+  float: left;
+  width: 12em;
+  margin-left: 4em;
+  padding-top: 1.4em;
+}
+
+.footerDerecha{
+  float: right;
+  padding-top: 1.5em;
+  padding-right: 4em;
+}
+
+.IniciarSesion{
+	width: 320px;  /*Tamaño del recuadro*/
+	height: 400px;
+	background:#9CEC58;
+	color:#000000;
+	top: :50%;  /*Ubicación del cuadro iniciar sesión en y*/
+	left:50%; /*Ubicación del cuadro iniciar sesion en x*/
+	position: relative;
+	transform: translate(-50%,20%);
+	box-sizing: border-box;
+	padding: 20px 30px;  /*Espaciado interno en "x" y "y respectivamente"*/
+	border-radius:22px;  /*Hace las esquinas redondas*/
+
+}
+
+.Registrarse{
+	width: 320px;  /*Tamaño del recuadro*/
+	height: 450px;
+	background:#9CEC58;
+	color:#000000;
+	top:50%;  /*Ubicación del cuadro iniciar sesión en y*/
+	left:50%; /*Ubicación del cuadro iniciar sesion en x*/
+	position: relative; 
+	transform: translate(-50%,10%);
+	box-sizing: border-box;
+	padding: 20px 30px;  /*Espaciado interno en "x" y "y respectivamente"*/
+	border-radius:22px;  /*Hace las esquinas redondas*/
+}
+
