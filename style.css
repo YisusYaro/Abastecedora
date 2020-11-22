@@ -82,43 +82,6 @@ header nav a:visited{
   padding-left: 3em;
 }
 
-/* Codigo añadido para la ventana del catalogo*/
-#catalogo {
-  width:100%;
-  text-align:center;
- }
- #catalogo > div {
-  width: calc(100% / 4); 
-  display: inline-block;
-  vertical-align: top;   
-  border:1px solid gray;
-  text-align:center;
-  margin:4.2%;    
-  padding:20px;
- }
-
- .button {
-  border: solid black 1px;
-  color: black;
-  background-color: #F0F465;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 25px;
-}
-
-.confirmarPedido {
-        display:scroll;
-        position:fixed;
-        bottom:4em;
-        right:43%;
-}
- /*Fin de codigo extra de ventana catalogo*/
-
 footer{
   margin: 0px;
   background-color: #F0F465;
@@ -137,3 +100,33 @@ footer{
   padding-top: 1.5em;
   padding-right: 4em;
 }
+
+.IniciarSesion{
+	width: 320px;  /*Tamaño del recuadro*/
+	height: 400px;
+	background:#9CEC58;
+	color:#000000;
+	top: :50%;  /*Ubicación del cuadro iniciar sesión en y*/
+	left:50%; /*Ubicación del cuadro iniciar sesion en x*/
+	position: relative;
+	transform: translate(-50%,20%);
+	box-sizing: border-box;
+	padding: 20px 30px;  /*Espaciado interno en "x" y "y respectivamente"*/
+	border-radius:22px;  /*Hace las esquinas redondas*/
+
+}
+
+.Registrarse{
+	width: 320px;  /*Tamaño del recuadro*/
+	height: 450px;
+	background:#9CEC58;
+	color:#000000;
+	top:50%;  /*Ubicación del cuadro iniciar sesión en y*/
+	left:50%; /*Ubicación del cuadro iniciar sesion en x*/
+	position: relative; 
+	transform: translate(-50%,10%);
+	box-sizing: border-box;
+	padding: 20px 30px;  /*Espaciado interno en "x" y "y respectivamente"*/
+	border-radius:22px;  /*Hace las esquinas redondas*/
+}
+
