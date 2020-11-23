@@ -3,6 +3,8 @@
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
 
+    $contrasena = intval($contrasena);
+
     $servername = "localhost";
     $database = "abastecedora";
     $username = "root";
@@ -21,12 +23,12 @@
         exit;
     }
 
-    $sql       = 'SELECT nombre FROM usuarios WHERE id = 0001';
+    $sql       = "SELECT tipo FROM usuarios WHERE nombre = \"$usuario\" AND contrasena = \"$contrasena\"";
     $resultado = mysqli_query($conn, $sql);
 
     $row= mysqli_fetch_array($resultado);
 
-    $salt = $row['nombre'];
+    $salt = $row['tipo'];
 
     echo $salt;
   // Free result set
