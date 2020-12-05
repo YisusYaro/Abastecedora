@@ -2,11 +2,12 @@
 <html lang="es">
 <html>
 <head>
-	<title>Abastecedora</title>
-	 <meta charset="UTF-8">
-     <meta name="title" content="Abastecedora">
-      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href="style.css" rel="stylesheet"> 
+    <title>Abastecedora</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="Abastecedora">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -17,28 +18,24 @@
         </nav>
     </header>  
        <div class="Registrarse">
-        <form>
             <h1 align="center">Registrarse </h1>
             <br><br>
-            <label for="Usuario"><b>Usuario</label>
+            <label for="correo">Correo</label>
             <br>
-            <input type="text" name="CajaUsuario" placeholder="Ingrese su nombre de usuario">
+            <input type="text" id="correo" name="correo" placeholder="Ingrese su correo">
             <br><br>
-            <label for="Usuario">Correo</label>
+            <label for="nombre">Nombre</label>
             <br>
-            <input type="text" name="CajaCorreo" placeholder="Ingrese su correo">
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
             <br><br>
-            <label for="Usuario">Nombre</label>
+            <label for="contrasena">Contraseña</label>
             <br>
-            <input type="text" name="CajaNombre" placeholder="Ingrese su nombre completo">
+            <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contrasena">
             <br><br>
-            <label for="Usuario">Contraseña</label>
-            <br>
-            <input type="text" name="CajaContraseña" placeholder="Ingrese su nombre completo">
-            <br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  type="submit" name="registrarse" value="Registrarse" style="background-color: #F0F465; height:40px; width:100px;">
-        </form></b>
+            <button  id="registrarse" style="background-color: #F0F465; height:40px; width:100px;">Registrarse</button>
+        </b>
    </div>
+   <script src="registrarse.js"></script>
 
    <br>
    <br>

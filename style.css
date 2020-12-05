@@ -9,7 +9,10 @@ body{
 header{
     background-color: #F0F465;
     margin: 0px;
-    height: 4em;
+    height: 10vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0vh; left: 0vw;
 }
 
 header h1{
@@ -45,61 +48,233 @@ header nav a:visited{
   color: black;
 }
 
-
 #landscape{
   padding-left: 4em;
-  height: 39.5em;
+  height: 90vh;
+}
+
+#landscape1{
+  padding-left: 4em;
+  height: 90vh;
+  background: rgb(156,236,88);
+  background: linear-gradient(126deg, rgba(156,236,88,1) 31%, rgba(255,255,255,1) 57%);
+}
+
+@keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+#landscape2{
+  padding-left: 4em;
+  height: 100vh;
+  background: linear-gradient(150deg, #9cec58,  #ffffff);
+    background-size: 400% 300%;
+    animation: BgGradient 4s ease infinite;
+}
+
+#landscape2 div{
+    height: 40vh;
+    width: 60vw;
+    margin: auto;
+    padding-top: 20vh;
+}
+#landscape2 div p{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+    background: linear-gradient(150deg, #ffffff,  #9cec58);
+    background-size: 400% 300%;
+    animation: BgGradient 4s ease infinite;
+}
+
+#landscape3{
+  padding-left: 4em;
+  height: 100vh;
+  background: linear-gradient(150deg, #ffffff,  #f0f465);
+    background-size: 400% 300%;
+    animation: BgGradient 3s ease infinite;
+}
+
+#landscape3 div{
+    height: 40vh;
+    width: 60vw;
+    margin: auto;
+    padding-top: 20vh;
+}
+
+#landscape3 div p{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+    background: linear-gradient(150deg, #f0f465,  #ffffff);
+    background-size: 400% 300%;
+    animation: BgGradient 4s ease infinite;
+}
+
+#landscape4{
+  padding-left: 4em;
+  height: 90vh;
+  background: linear-gradient(150deg, #9cec58,  #f0f465);
+    background-size: 400% 300%;
+    animation: BgGradient 3s ease infinite;
+}
+
+#landscape4 div{
+    height: 40vh;
+    width: 60vw;
+    margin: auto;
+    padding-top: 20vh;
+}
+
+#landscape4 div ul{
+    border: 2px solid black;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 25px;
+    background: linear-gradient(150deg, #f0f465,  #9cec58);
+    background-size: 400% 300%;
+    animation: BgGradient 4s ease infinite;
 }
 
 #bienvenidaTitulo{
-  float: left;
-  margin-top: 2em;
+  padding-left: 2vw;
+  padding-top: 10vh;
   font-size: 4em;
-  width: 10em;
+  width: 60vw;
 }
 
 #bienvenidaTexto{
-  float: left;
-  margin-top: 0.5em;
-  width: 30em;
+  padding-left: 2vw;
+  padding-top: 5vh;
+  font-size: 1em;
+  width: 27vw;
 }
 
-#landscape img{
-  margin-top: 7em;
+
+#imagen{
+  position: absolute;
+  top: 12vh; 
+  left: 68vw;
+}
+
+body div a{
+  color: black;
+  margin: 0px;
+  text-decoration: none;
+  margin-left: 1.5em;
   margin-right: 4em;
-  float: right;
+
+}
+
+#divPedidoRealizado{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0.8em;
+  background: linear-gradient(150deg, #9cec58,  #ffffff, #9cec58);
+  background-size: 400% 300%;
+  animation: BgGradient 6s ease infinite;
+}
+
+#divPedidoSolicitud{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0.8em;
+  background: linear-gradient(150deg, #e30022,  #ffffff, #e30022);
+  background-size: 400% 300%;
+  animation: BgGradient 6s ease infinite;
+}
+
+#divPedidoSolicitudCliente{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0.8em;
+  background: linear-gradient(150deg, #00b9fb,  #ffffff, #00b9fb);
+  background-size: 400% 300%;
+  animation: BgGradient 6s ease infinite;
 }
 
 #botonVerCatalogo{
   float: left;
-  margin-left: 8em;
-  margin-top: 3em;
-  width: 12em;
+  width: 20.9vw;
   height: 2.6em;
   background-color: #F0F465;
   border: 2px solid black;
   border-radius: 0.8em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 68vh; left: 40vw;
 }
 
 #botonVerCatalogo div{
-  padding-top: 0.7em;
-  padding-left: 3em;
+position: relative;
+top: 10px; left: 20px;
 }
+
+#botonNavegacionInferior{
+  float: left;
+  width: 45vw;
+  height: 2.6em;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0.8em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90vh; left: 27vw;
+}
+
+#botonNavegacionInferior div{
+position: relative;
+top: 10px; left: 20px;
+}
+
+
 
 /* Codigo añadido para la ventana del catalogo*/
 #catalogo {
   width:100%;
   text-align:center;
  }
- #catalogo > div {
+ #catalogo div{
   width: calc(100% / 4); 
   display: inline-block;
   vertical-align: top;   
-  border:1px solid gray;
-  text-align:center;
-  margin:4.2%;    
+  border:3px solid black;
+  text-align: left;
+  margin:2%;    
   padding:20px;
+  border-radius: 25px;
+  background: linear-gradient(150deg, #9cec58,  #ffffff);
+  background-size: 400% 300%;
+  animation: BgGradient 6s ease infinite;
  }
+ 
+#catalogo img{
+     width:10vw;
+    display:block;
+    margin:auto;
+ }
+ 
+ #contenedorImagen img{
+     width : 10vw;
+     height : 10vw;
+     
+ }
+ 
+ #catalogo ul{
+     list-style:none;
+ }
+ 
+ #catalogo button {
+  background-color: #F0F465;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
  .button {
   border: solid black 1px;
@@ -146,7 +321,7 @@ footer{
 	height: 400px;
 	background:#9CEC58;
 	color:#000000;
-	top: :50%;  /*Ubicación del cuadro iniciar sesión en y*/
+	top: 50%;  /*Ubicación del cuadro iniciar sesión en y*/
 	left:50%; /*Ubicación del cuadro iniciar sesion en x*/
 	position: relative;
 	transform: translate(-50%,20%);
@@ -169,3 +344,115 @@ footer{
 	padding: 20px 30px;  /*Espaciado interno en "x" y "y respectivamente"*/
 	border-radius:22px;  /*Hace las esquinas redondas*/
 }
+
+/*Inicio de css para productos*/
+.formProd {
+  top:50%;
+  left:50%;
+  width: 600px;
+  height: 700px;
+  position: relative;
+  transform: translate(-50%,10%);
+  box-sizing: border-box;
+  padding: 20px 30px; 
+  border-radius:22px;
+}
+
+.editProd {
+  top:50%;
+  left:50%;
+  width: 600px;
+  height: 900px;
+  position: relative;
+  transform: translate(-50%,10%);
+  box-sizing: border-box;
+  padding: 20px 30px; 
+  border-radius:22px;
+}
+
+.container {
+  padding: 10px;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 10x;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+textarea{
+  width: 97%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=number]{
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+input[type=text]:focus, input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/*pendiente a borrar*/
+.productbtn {
+  background-color: #9CEC58;
+  color: black;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+.duenobtn {
+  background-color: #9CEC58;
+  color: black;
+  padding: 16px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 20%;
+  opacity: 0.9;
+  box-sizing: border-box;
+  padding: 20px 30px; 
+  border-radius:22px;
+}
+
+/*fin de css para productos*/
+
+.pedido {
+  width:100%;
+  text-align:center;
+ }
+ .pedidos div {
+  width: 80%; 
+  display: inline-block;
+  vertical-align: top;   
+  border:1px solid gray;
+  text-align: left;
+  margin:4.2%;    
+  padding:20px;
+ }

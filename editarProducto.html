@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="comprobarAccesoDueno.js"></script>
+    <title>Abastecedora</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="Abastecedora">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <meta name="description" content="Web para comprar los productos más frescos">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Abastecedora</a></h1>
+        <nav>
+            <a id="cerrarSesion">Cerrar sesión</a>
+        </nav>
+    </header>
+
+    <div class="editProd">
+        <div id="editProd">
+            <div class="container">
+                <h1>Editar producto</h1>
+                <p>Ingrese los datos del producto a editar.</p>
+                <hr>
+                
+                
+                <form enctype="multipart/form-data" action="editarProductoImgNueva.php" method="POST" id="formulario" onsubmit="return validateForm()">
+                    
+                    <input type="hidden" placeholder="Ingrese id del producto" name="idProducto" id="idProducto"
+                        required>
+                    
+                    <label for="nombreProducto"><b>Nombre del producto</b></label>
+                    <input type="text" placeholder="Ingrese nombre del producto" name="nombreProducto" id="nombreProducto"
+                        required>
+    
+                    <!--<label for="linkIMG"><b>Link de la imagen</b></label>
+                    <input type="text" placeholder="Ingrese el enlace que contiene la imagen del producto" name="linkIMG"
+                        id="linkIMG" required> -->
+    
+                    <label for="descripcion"><b>Descripcion</b></label>
+                    <textarea id="descripcion" type="text" placeholder="Ingrese aquí una descripción del producto."
+                        name="descripcion" rows="3" cols="45"></textarea>
+    
+                    <br>
+                    <label for="Unidades"><b>Unidades</b></label>
+                    <input type="number" placeholder="Ingrese número de unidades" name="unidades" id="unidades" min="1"
+                        max="9999" value="0.00" step="any" required>
+    
+                    <label for="precio"><b>Precio por unidad</b></label>
+                    <input type="number" placeholder="Ingrese precio" name="precio" id="precio" min="1" max="9999.99"
+                        value="0.00" step=".01" required>
+                    <br>
+                    
+                    <h4>Imagen actual:</h4>
+                    <div id="contenedorImagen">
+                    </div> 
+                    <input type="hidden" name="MAX_FILE_SIZE" value="200000" />
+                    <!-- El nombre del elemento de entrada determina el nombre en el array $_FILES -->
+                    Si desea ingresar una imagen distinta, seleccionar: <input id="image"  name="image" type="file" accept="image/jpeg" />
+                    <br>
+                    <hr>
+                    
+                    <input type="submit" value="Finalizar edición imagen nueva" class="productbtn" id="btn-ingresar" />
+                </form>  
+                
+                    <button id="editar" class="productbtn" name="subir">Finalizar edición conservando imagen actual</button>
+                    
+            </div>
+        </div>
+        <script src="editarProducto2.js"></script>
+        <script src="cerrarSesion.js"></script>
+    </div>
+
+
+    <footer>
+        <div class="footerIzquierda">Abastecedora S.A. DE C.V.</div>
+        <div class="footerDerecha">Desarrollado por 3 Team ©</div>
+
+    </footer>
+</body>
+
+</html>

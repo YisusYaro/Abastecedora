@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">  
+<html lang="es">
+
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="comprobarAccesoCliente.js"></script>
-    <title>Abastecedora</title>    
+    <title>Abastecedora</title>
     <meta charset="UTF-8">
     <meta name="title" content="Abastecedora">
     <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
-    <meta name="description" content="Web para comprar los productos más frescos">    
+    <meta name="description" content="Web para comprar los productos más frescos">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="style.css" rel="stylesheet">
-</head>  
-<body>    
+</head>
+
+<body>
     <header>
-        <h1><a href="index.html">Abastecedora</a></h1>  
+        <h1><a href="index.html">Abastecedora</a></h1>
         <nav>
-            <a href="verMisPedidos.html">Mis pedidos</a>
+            <a href="javascript:history.back()"> Atrás</a>
             <a id="cerrarSesion">Cerrar sesión</a>
         </nav>
-    </header>    
+    </header>
+    
+    <div id= "pedidos" class="pedidos">
 
-    <div id="catalogo">
-        <p id="bienvenida"></p>
     </div>
-    
-    <button id="confirmarPedido" class="button confirmarPedido">Confirmar pedido</button>
-    <script src="verProductosYPedidos.js"></script>
+    <script src="verMisPedidos.js"></script>
     <script src="cerrarSesion.js"></script>
-    
     <footer>
         <div class="footerIzquierda">Abastecedora S.A. DE C.V.</div>
         <div class="footerDerecha">Desarrollado por 3 Team ©</div>
-        
+
     </footer>
-</body>  
+</body>
+
 </html>

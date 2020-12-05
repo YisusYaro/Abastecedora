@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">  
-<head>    
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="comprobarAccesoIndex.js"></script>    
     <title>Abastecedora</title>    
     <meta charset="UTF-8">
     <meta name="title" content="Abastecedora">
@@ -10,20 +12,52 @@
     <link href="style.css" rel="stylesheet">    
 </head>  
 <body>    
-    <header>
+    <header id="headerIndex">
         <h1><a href="index.html">Abastecedora</a></h1> 
         <nav>
-            <a href="iniciarSesion.html">Iniciar sesión</a>
-            <a href="registrarse.html">Registrarse</a>
+            <a id="iniciarSesion" href="iniciarSesion.html">Iniciar sesión</a>
+            <a id="registrarse" href="registrarse.html">Registrarse</a>
+            <a id="catalogo" href="catalogo.html">Catálogo</a>
+            <a id="panelDueno" href="panelDueno.html">Ir al Panel Dueño</a>
+            <a id="panelEmpleado" href="panelEmpleado.html">Ir al Panel Empleado</a>
+            <a id="cerrarSesion">Cerrar sesión</a>
         </nav>
     </header>    
-
-    <div id="landscape">
+            <div id="botonVerCatalogo"><div><a href="catalogo.html">Comienza a comprar ahora</a></div></div>
+            <div id="botonNavegacionInferior"><div>
+                <a href="#landscape1">Bienvenida</a>
+                <a href="#landscape2">Misión</a>
+                <a href="#landscape3">Visión</a>
+                <a href="#landscape4">Valores</a>
+            </div></div>
+            <div id="imagen"><img src="bann-unscreen.gif"></div>
+    <div id="landscape1">
             <div id="bienvenidaTitulo">Bienvenido a nuestra Abastecedora</div>
-            <img src="platano.png">
             <div id="bienvenidaTexto">Nuestra abastecedora esta comprometida a siempre llevarte los mejores productos. Compruebalo tú mismo.</div>
-            <div id="botonVerCatalogo"><div><a href="catalogo.html">Ver Catalogo</a></div></div>
     </div>
+            <div id="landscape2">
+                <div>
+                    <h1>Misión</h1><br><p>Nuestra misión es satisfacer las necesidades de todos nuestros clientes y  partner así como también de nuestros  trabajadores, con el objetivo de maximizar la eficiencia y optimizar la rentabilidad a través de nuestra  diferenciación en calidad de producto, servicio y precio.</p>
+                </div>    
+            </div>
+            <div id =landscape3>
+                <div>
+                    <h1>Visión</h1><br><p>Nuestra visión es conseguir la fidelización de nuestros clientes a través de comercialización de productos de calidad, a partir de la cual afianzar un crecimiento progresivo y sostenido en el mercado nacional y europeo consolidando nuestra posición como empresa de referencia en el sector con una imagen corporativa propia y diferenciada de sus competidores. Abastecedora trabaja para conseguir la máxima calidad, un catálogo de productos diversificado y el mejor servicio al precio más competitivo.
+                    </p>
+                </div>
+            </div>
+            <div id=landscape4>
+                <div>
+                    <h1>Valores</h1><br>
+                        <ul>
+                        <li>La seriedad y el compromiso que nos permiten mantener la confianza de nuestros clientes y proveedores.</li>
+                        <li>Compromiso de servicio de nuestro equipo humano para lograr, con  su esfuerzo constante, la satisfacción del cliente.</li>
+                        <li>Apuesta decidida por la Calidad y mejora continua de nuestras instalaciones y procedimientos, para anticiparnos a las necesidades del mercado y así ser más competitivos.</li>
+                        </ul>
+                </div>
+            </div>
+
+    <script src="cerrarSesion.js"></script>
     <footer>
         <div class="footerIzquierda">Abastecedora S.A. DE C.V.</div>
         <div class="footerDerecha">Desarrollado por 3 Team ©</div>
